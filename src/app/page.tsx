@@ -3,14 +3,14 @@ import logo from "../../public/ronin.png";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between p-16">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="w-max">
+    <main className="flex flex-col min-h-screen items-center justify-between p-10">
+      <div className="z-10 flex w-full max-w-5xl items-center justify-center  lg:justify-between font-mono text-sm lg:flex">
+        <div className="flex lg:block justify-center">
           <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-xl font-bold">
             Geek_Social
           </h1>
         </div>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-zinc-800 dark:via-zinc-800 lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+        <div className="max-w-screen-xl py-8 mx-auto lg:px-6 lg:py-24">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
               Two simple rules
