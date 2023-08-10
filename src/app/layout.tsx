@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import { Courier_Prime, Press_Start_2P } from "next/font/google";
 
 const courier = Courier_Prime({ weight: "400", subsets: ["latin"] });
-const pressStart = Press_Start_2P({ weight: "400", subsets: ["latin"], variable: "--font-Press-Start-2P" });
+const inter = Inter({ subsets: ["latin"] });
+// const pressStart = Press_Start_2P({ weight: "400", subsets: ["latin"], variable: "--font-Press-Start-2P" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${courier.className} ${pressStart.variable}`}>{children}</body>
+      <body className={`${courier.className} ${inter.className}`}>{children}</body>
     </html>
   );
 }

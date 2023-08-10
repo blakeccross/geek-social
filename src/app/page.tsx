@@ -1,7 +1,11 @@
 import Image from "next/image";
 import logo from "../../public/ronin.png";
 
-export default function Home() {
+export default function Home(courier: any) {
+  function createMarkup() {
+    return { __html: "" };
+  }
+
   return (
     <main className="flex flex-col min-h-screen items-center justify-between p-10">
       <div className="z-10 flex w-full max-w-5xl items-center justify-center  lg:justify-between font-mono text-sm lg:flex">
@@ -20,23 +24,30 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <section className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-100 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
         <div className="py-8 px-4 mx-auto max-w-5xl  lg:py-16">
           <div className="items-center mb-8 lg:mb-24 lg:gap-12 lg:grid-cols-12">
             <div className="col-span-6 text-center sm:mb-6 lg:text-left lg:mb-0">
-              <h1 className="mb-4 text-4xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white font-display">
+              <h1 className="mb-4 text-6xl text-center font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white font-display">
                 Find Your People_
               </h1>
-              <p className="max-w-4xl mb-6 font-light text-center text-gray-500 lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400">
+              <p className={"max-w-4xl mb-6 text-center text-gray lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400"}>
                 Geek Social is a meeting of the Geek Minds of Nashville and Middle Tennessee. It's a chance to get together, relax, and find out
                 what's going on in the world away from your desk.
                 <br />
                 <br />
                 To get Geeky with us, join our email list and receive monthly alerts and reminders about upcoming Geek Social events.
               </p>
-              <form action="#" className="flex">
-                <div className="justify-center items-center mx-auto mb-3 space-y-4 sm:flex lg:justify-start sm:space-y-0 sm:space-x-4">
-                  <div className="relative">
+              <form
+                action="https://consulting.us21.list-manage.com/subscribe/post?u=989e2815725fb20963dcdd3b7&amp;id=ea4275d64b&amp;f_id=00045ce1f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank"
+                className="flex justify-center items-center"
+              >
+                <div className="flex justify-center items-center">
+                  {/* <div className="relative">
                     <label className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                       <svg
@@ -52,16 +63,19 @@ export default function Home() {
                     <input
                       className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:w-80 xl:w-96 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                       placeholder="Enter your email"
+                      name="EMAIL"
+                      id="mce-EMAIL"
                       type="email"
-                      id="email"
                       required
                     />
                   </div>
                   <button
                     type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
                     className="w-full sm:w-auto justify-center  bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
-                    Sign up
+                    <h5>Sign up</h5>
                     <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
@@ -69,7 +83,22 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                  </button>
+                  </button> */}
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: `<div id="mc_embed_shell" class="justify-center items-center mx-auto mb-3 space-y-4 sm:flex lg:justify-start sm:space-y-0 sm:space-x-4">
+<form action="https://consulting.us21.list-manage.com/subscribe/post?u=989e2815725fb20963dcdd3b7&amp;id=ea4275d64b&amp;f_id=00045ce1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+<div class="mc-field-group"><input type="email" name="EMAIL" class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:w-80 xl:w-96 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+<div hidden=""><input type="hidden" name="tags" value="2827124"></div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display: none;"></div>
+<div class="response" id="mce-success-response" style="display: none;"></div>
+</div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_989e2815725fb20963dcdd3b7_ea4275d64b" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="w-full sm:w-auto justify-center  bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" value="Subscribe"></div>
+</form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>`,
+                    }}
+                  />
                 </div>
               </form>
             </div>
@@ -79,12 +108,12 @@ export default function Home() {
       <section>
         <div className="max-w-screen-xl py-8 lg:px-6 lg:py-24">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">Two simple rules</h2>
+            <h2 className="text-5xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl dark:text-white">Two simple rules</h2>
           </div>
 
           <div className="p-5 mx-auto mt-8 space-y-5 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             <div className="pb-5 border-b border-gray-200 dark:border-gray-700">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Rule 1</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Rule 1</h3>
               <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
                 You must be a Geek about something. It takes all kinds of Geeks to make things happen. You don't have to be a software or hardware
                 engineer to be Geek. The kind of Geek you are? Embrace it. Be vocal about your area of Geek interest and bring your enthusiasm. We're
@@ -93,7 +122,7 @@ export default function Home() {
             </div>
 
             <div className="pb-5 border-b border-gray-200 dark:border-gray-700">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Rule 2</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Rule 2</h3>
               <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
                 No recruiters, please. While we appreciate and love our recruiters, the Geek Social isn't about growing our careers. It's about
                 growing our community, connection, friendship, and, well...Geeking out. This rule has helped make the Geek Social what it is today,
@@ -150,8 +179,9 @@ export default function Home() {
                 src="https://media-cdn.tripadvisor.com/media/photo-s/08/11/5d/9d/taproom-main-bar.jpg"
                 alt=""
               />
-
-              <h3 className="text-lg font-bold leading-tight text-gray-900 dark:text-white">August Geek Social </h3>
+              <div className="m-t-4">
+                <span className="text-lg font-bold leading-tight text-gray-900 dark:text-white">August Geek Social </span>
+              </div>
               <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                 <b>Date: </b>Wednesday, August 9th
                 <br />

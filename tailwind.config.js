@@ -7,13 +7,13 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        sans: ["Courier Prime"],
-        serif: ["Courier Prime"],
-        mono: ["var(--font-courier-prime)"],
-        display: ["var(--font-Press-Start-2P)"],
-        body: ["Courier Prime"],
-      },
+      // fontFamily: {
+      //   sans: ["Courier Prime"],
+      //   serif: ["Courier Prime"],
+      //   mono: ["var(--font-courier-prime)"],
+      //   display: ["var(--font-Press-Start-2P)"],
+      //   body: ["Courier Prime"],
+      // },
       keyframes: {
         typing: {
           "0%": {
