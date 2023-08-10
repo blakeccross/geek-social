@@ -33,7 +33,7 @@ export default function Home(courier: any) {
               </h1>
               <p className={"max-w-4xl mb-6 text-center text-gray lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400"}>
                 Geek Social is a meeting of the Geek Minds of Nashville and Middle Tennessee. It&apos;s a chance to get together, relax, and find out
-                what's going on in the world away from your desk.
+                what&apos;s going on in the world away from your desk.
                 <br />
                 <br />
                 To get Geeky with us, join our email list and receive monthly alerts and reminders about upcoming Geek Social events.
@@ -147,7 +147,7 @@ export default function Home(courier: any) {
             </div>
 
             <div className="relative overflow-hidden rounded-lg group lg:w-2/3">
-              <img
+              <Image
                 className="object-cover w-full h-[320px] lg:h-auto scale-100 ease-in duration-300 group-hover:scale-125"
                 src="https://media.licdn.com/dms/image/C5603AQGv1GMAQp7Bmw/profile-displayphoto-shrink_200_200/0/1654187947016?e=1696464000&v=beta&t=ACtYVtirKjee_Wb6c6xugfmmvoIVQ-ojRi8sTVo8zn4"
                 alt=""
@@ -174,7 +174,7 @@ export default function Home(courier: any) {
 
           <div className="flex justify-center gap-4 mt-8 xl:gap-12">
             <div className="p-5 space-y-4 bg-white border border-gray-200 rounded-lg shadow-md lg:p-8 dark:bg-gray-800 dark:border-gray-700 max-w-xl">
-              <img
+              <Image
                 className="object-cover w-full rounded-lg shadow-lg"
                 src="https://media-cdn.tripadvisor.com/media/photo-s/08/11/5d/9d/taproom-main-bar.jpg"
                 alt=""
