@@ -106,7 +106,7 @@ export default function Home(courier: any) {
         </div>
       </section>
       <section>
-        <div className="max-w-screen-xl py-8 lg:px-6 lg:py-24">
+        <div className="max-w-5xl py-8 lg:px-6 lg:py-24">
           <div className="text-center">
             <h2 className="text-5xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl dark:text-white">Two simple rules</h2>
           </div>
@@ -132,7 +132,7 @@ export default function Home(courier: any) {
           </div>
         </div>
       </section>
-      <section className="max-w-screen-xl antialiased">
+      <section className="max-w-5xl  antialiased">
         <div className=" px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
           <div className="flex flex-col gap-8 sm:gap-12 lg:gap-16 lg:flex-row lg:items-start">
             <div>
@@ -147,7 +147,7 @@ export default function Home(courier: any) {
             </div>
 
             <div className="relative overflow-hidden rounded-lg group lg:w-2/3">
-              <Image
+              <img
                 className="object-cover w-full h-[320px] lg:h-auto scale-100 ease-in duration-300 group-hover:scale-125"
                 src="https://media.licdn.com/dms/image/C5603AQGv1GMAQp7Bmw/profile-displayphoto-shrink_200_200/0/1654187947016?e=1696464000&v=beta&t=ACtYVtirKjee_Wb6c6xugfmmvoIVQ-ojRi8sTVo8zn4"
                 alt=""
@@ -164,7 +164,7 @@ export default function Home(courier: any) {
       </section>
 
       <section>
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+        <div className="max-w-5xl  px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">Upcoming Events</h2>
             <p className="mt-4 text-base font-normal text-gray-500 dark:text-gray-400 sm:text-xl">
@@ -174,7 +174,7 @@ export default function Home(courier: any) {
 
           <div className="flex justify-center gap-4 mt-8 xl:gap-12">
             <div className="p-5 space-y-4 bg-white border border-gray-200 rounded-lg shadow-md lg:p-8 dark:bg-gray-800 dark:border-gray-700 max-w-xl">
-              <Image
+              <img
                 className="object-cover w-full rounded-lg shadow-lg"
                 src="https://media-cdn.tripadvisor.com/media/photo-s/08/11/5d/9d/taproom-main-bar.jpg"
                 alt=""
