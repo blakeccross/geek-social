@@ -32,7 +32,7 @@ export default function Home(courier: any) {
                 Find Your People_
               </h1>
               <p className={"max-w-4xl mb-6 text-center text-gray lg:mx-0 xl:mb-8 md:text-lg xl:text-xl dark:text-gray-400"}>
-                Geek Social is a meeting of the Geek Minds of Nashville and Middle Tennessee. It's a chance to get together, relax, and find out
+                Geek Social is a meeting of the Geek Minds of Nashville and Middle Tennessee. It&apos;s a chance to get together, relax, and find out
                 what's going on in the world away from your desk.
                 <br />
                 <br />
@@ -115,18 +115,18 @@ export default function Home(courier: any) {
             <div className="pb-5 border-b border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Rule 1</h3>
               <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
-                You must be a Geek about something. It takes all kinds of Geeks to make things happen. You don't have to be a software or hardware
-                engineer to be Geek. The kind of Geek you are? Embrace it. Be vocal about your area of Geek interest and bring your enthusiasm. We're
-                here for it.
+                You must be a Geek about something. It takes all kinds of Geeks to make things happen. You don&apos;t have to be a software or
+                hardware engineer to be Geek. The kind of Geek you are? Embrace it. Be vocal about your area of Geek interest and bring your
+                enthusiasm. We&apos;re here for it.
               </p>
             </div>
 
             <div className="pb-5 border-b border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Rule 2</h3>
               <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
-                No recruiters, please. While we appreciate and love our recruiters, the Geek Social isn't about growing our careers. It's about
-                growing our community, connection, friendship, and, well...Geeking out. This rule has helped make the Geek Social what it is today,
-                and we appreciate all our recruiter friends for understanding.
+                No recruiters, please. While we appreciate and love our recruiters, the Geek Social isn&apos;t about growing our careers. It&apos;s
+                about growing our community, connection, friendship, and, well...Geeking out. This rule has helped make the Geek Social what it is
+                today, and we appreciate all our recruiter friends for understanding.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function Home(courier: any) {
                 hunt rats and gain experience, was her first exposure to coding.
               </p>
               <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-                You'll interact with talented professionals, will be challenged to solve difficult problems and think in new and creative ways.
+                You&apos;ll interact with talented professionals, will be challenged to solve difficult problems and think in new and creative ways.
               </p>
             </div>
 
