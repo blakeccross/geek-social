@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logo from "../../public/ronin.png";
-import { ThemeProvider } from "next-themes";
 
 export default function Home(courier: any) {
   function createMarkup() {
@@ -94,7 +93,7 @@ export default function Home(courier: any) {
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display: none;"></div>
 <div class="response" id="mce-success-response" style="display: none;"></div>
-</div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_989e2815725fb20963dcdd3b7_ea4275d64b" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="w-full sm:w-auto justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center bg-primary-600 hover:bg-primary-700 focus:ring-primary-800" value="Subscribe"></div>
+</div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_989e2815725fb20963dcdd3b7_ea4275d64b" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="w-full sm:w-auto justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 cursor-pointer" value="Subscribe"></div>
 </form>
 </div>
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>`,
